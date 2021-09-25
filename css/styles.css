@@ -95,7 +95,7 @@
     /* color-1(#eabe7c)
      * color-2(#23967f)
      */
-    --color-1 : hsla(36, 72%, 70%, 1);
+    --color-1 : hsl(112, 23%, 60%);
     --color-2 : hsla(168, 62%, 36%, 1);
 
     /* theme color variations
@@ -115,7 +115,7 @@
      */
     --color-error           : hsla(359, 100%, 91%, 1);
     --color-success         : hsla(76, 69%, 68%, 1);
-    --color-info            : hsla(205, 82%, 91%, 1);
+    --color-info            : hsl(0, 0%, 91%);
     --color-notice          : hsla(51, 100%, 80%, 1);
     --color-error-content   : hsla(359, 50%, 50%, 1);
     --color-success-content : hsla(76, 29%, 28%, 1);
@@ -137,17 +137,17 @@
     --color-gray-13 : #0e0f0f;
     --color-gray-12 : #101112;
     --color-gray-11 : #121314;
-    --color-gray-10 : #141516;
-    --color-gray-9  : #2c2c2d;
+    --color-gray-10 : #ffffff;
+    --color-gray-9  : #f5f5f5;
     --color-gray-8  : #434445;
     --color-gray-7  : #5b5b5c;
     --color-gray-6  : #727373;
     --color-gray-5  : #8a8a8b;
-    --color-gray-4  : #a1a1a2;
+    --color-gray-4  : #a4c493;
     --color-gray-3  : #b9b9b9;
     --color-gray-2  : #d0d0d0;
     --color-gray-1  : #e8e8e8;
-    --color-white   : #ffffff;
+    --color-white   : rgb(76, 76, 76);
 
     /* text
      */
@@ -160,7 +160,7 @@
      */
     --color-btn                    : var(--color-gray-9);
     --color-btn-text               : var(--color-1);
-    --color-btn-hover              : var(--color-white);
+    --color-btn-hover              : var(--color-gray-1);
     --color-btn-hover-text         : var(--color-black);
     --color-btn-primary            : var(--color-1-dark);
     --color-btn-primary-text       : var(--color-black);
@@ -180,7 +180,7 @@
     /* others
      */
     --color-body    : var(--color-gray-10);
-    --color-border  : rgba(255, 255, 255, .05);
+    --color-border  : rgba(226, 226, 226, 0.85);
     --border-radius : 3px;
 }
 
@@ -2679,7 +2679,7 @@ img.u-pull-left {
     display          : block;
     height           : 1px;
     width            : 4rem;
-    background-color : rgba(255, 255, 255, 0.5);
+    background-color : rgba(156, 156, 156, 0.5);
     position         : absolute;
     top              : 50%;
     left             : 0;
@@ -2952,7 +2952,7 @@ img.u-pull-left {
     line-height         : var(--header-height);
     text-transform      : uppercase;
     letter-spacing      : .35em;
-    color               : white;
+    color               : #636363;
     transition-property : color, background-color;
 }
 
@@ -3127,7 +3127,7 @@ img.u-pull-left {
 
     .main-nav a:focus,
     .main-nav a:hover {
-        color : white;
+        color : #e31717;
     }
 
     .main-nav .current a {
@@ -3238,7 +3238,7 @@ img.u-pull-left {
 
 .intro-social a:focus,
 .intro-social a:hover {
-    color : white;
+    color : #88B082FF;
 }
 
 /* --------------------------------------------------------------------
@@ -3262,7 +3262,7 @@ img.u-pull-left {
 }
 
 .intro-scrolldown svg path {
-    fill       : white;
+    fill       : #666666;
     transition : all .3s ease-in-out;
 }
 
@@ -3411,11 +3411,12 @@ img.u-pull-left {
     object-fit     : cover;
     margin         : 0;
     vertical-align : bottom;
+    padding-left: 25%;
 }
 
 .about-info__text {
     padding     : var(--vspace-3_5) 10vw var(--vspace-2) 0;
-    margin-left : -4rem;
+    padding-left: 40px;
 }
 
 .about-info__text .text-pretitle {
@@ -3613,7 +3614,7 @@ img.u-pull-left {
     display             : block;
     width               : 100%;
     padding-left        : calc(5.5 * var(--space));
-    color               : white;
+    color               : #555555;
     transition-duration : .5s;
     position            : relative;
 }
@@ -3754,7 +3755,7 @@ img.u-pull-left {
 }
 
 .folio-list__proj-link svg path {
-    fill : white;
+    fill : rgba(116, 116, 116, 0.5);
 }
 
 .folio-list__proj-link:hover {
@@ -4142,7 +4143,7 @@ img.u-pull-left {
 
 .s-footer a:focus,
 .s-footer a:hover {
-    color : white;
+    color : #7d7d7d;
 }
 
 /* ------------------------------------------------------------------- 
@@ -4195,8 +4196,8 @@ img.u-pull-left {
 
 .ss-go-top a:focus,
 .ss-go-top a:hover {
-    background-color : white;
-    border-color     : white;
+    background-color : #a4c493;
+    border-color     : #a4c493;
 }
 
 .ss-go-top a:focus svg path,
@@ -4211,7 +4212,7 @@ img.u-pull-left {
 }
 
 .ss-go-top svg path {
-    fill : white;
+    fill : rgb(146, 146, 146);
 }
 
 /* ------------------------------------------------------------------- 
