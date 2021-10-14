@@ -174,7 +174,7 @@
     /* preloader
      */
     --color-preloader-bg : var(--color-gray-10);
-    --color-loader       : white;
+    --color-loader       : var(--color-gray-8);
     --color-loader-light : rgba(255, 255, 255, 0.1);
 
     /* others
@@ -1553,7 +1553,7 @@ hr.fancy::before {
 .attention-getter {
     font-family : var(--font-1);
     font-weight : 300;
-    font-size   : var(--text-md);
+    font-size   : var(--text-size);
     line-height : var(--vspace-1_25);
     color       : var(--color-text-dark);
 }
@@ -1789,7 +1789,7 @@ img,
     width             : var(--vspace-2);
     height            : var(--vspace-2);
     padding           : 0;
-    background-color  : white;
+    background-color  : #88b082;
     border-radius     : 100%;
     -webkit-animation : sk-scaleout 1.0s infinite ease-in-out;
     animation         : sk-scaleout 1.0s infinite ease-in-out;
@@ -2659,7 +2659,7 @@ img.u-pull-left {
     font-family    : var(--font-1);
     font-size      : var(--text-sm);
     font-weight    : 400;
-    color          : var(--color-white);
+    color          : var(--color-1);
     text-transform : uppercase;
     letter-spacing : .3em;
     margin-top     : 0;
@@ -3214,18 +3214,18 @@ img.u-pull-left {
 .intro-social {
     z-index          : 1;
     list-style       : none;
-    display          : flex;
-    font-size        : 1rem;
+
+    font-size        : 1.5rem;
     font-weight      : 400;
     text-transform   : uppercase;
     letter-spacing   : .3em;
     margin           : 0;
     padding          : 0 0 0 9.6rem;
-    transform        : rotate(-90deg) translateX(-50%);
+    transform        : translateX(-50%);
     transform-origin : left bottom;
     position         : absolute;
     top              : 50%;
-    left             : calc(100% - 6rem);
+    left             : calc(98% - 6rem);
 }
 
 .intro-social li {
@@ -3412,6 +3412,8 @@ img.u-pull-left {
     margin         : 0;
     vertical-align : bottom;
     padding-left: 25%;
+    max-width: 90%;
+    height: auto;
 }
 
 .about-info__text {
