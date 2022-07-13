@@ -195,7 +195,7 @@
      */
     --base-size      : 62.5%;
     --multiplier     : 1;
-    --base-font-size : calc(1.9rem * var(--multiplier));
+    --base-font-size : calc(1.8rem * var(--multiplier));
     --space          : calc(3.2rem * var(--multiplier));
 
     /* vertical spacing 
@@ -276,7 +276,7 @@
     --width-wide     : 1400px;
     --width-wider    : 1600px;
     --width-widest   : 1800px;
-    --width-narrow   : 1000px;
+    --width-narrow   : 1100px;
     --width-narrower : 800px;
     --width-grid-max : var(--width-max);
 
@@ -1308,13 +1308,13 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-    margin-top    : var(--vspace-2_5);
-    margin-bottom : var(--vspace-0_75);
+    margin-top    : var(--vspace-1);
+    margin-bottom : var(--vspace-0_25);
 }
 
 h2, .h2, h3, .h3, h4, .h4 {
-    margin-top    : var(--vspace-2);
-    margin-bottom : var(--vspace-0_5);
+    margin-top    : var(--vspace-0_5);
+    margin-bottom : var(--vspace-0_25);
 }
 
 h5, .h5, h6, .h6 {
@@ -1549,6 +1549,36 @@ hr.fancy::before {
 /* --------------------------------------------------------------------
  * ## additional typography & helper classes
  * -------------------------------------------------------------------- */
+.project-p
+{
+    font-family : var(--font-1);
+    font-weight : 300;
+    font-size   : var(--text-size);
+    line-height : var(--vspace-1_25);
+    color       : var(--color-text-dark);
+}
+
+.project-p-list
+{
+    margin: 0 0 0 0;
+    font-weight: bold;
+}
+.project-h
+{
+    font-family : var(--font-1);
+    font-weight : 650;
+    margin-bottom : var(--vspace-1_25);
+}
+
+.project-h3
+{
+    font-family : var(--font-1);
+    font-weight : 650;
+    font-size   : var(--text-md);
+    margin-bottom : var(--vspace-0_25);
+}
+
+
 .lead,
 .attention-getter {
     font-family : var(--font-1);
@@ -2621,6 +2651,13 @@ td:last-child {
  * ## media classes
  * ------------------------------------------------------------------- */
 
+
+.project-img-smaller
+{
+    max-width: 85%;
+    height: auto;
+
+}
 /* floated image
  */
 
@@ -2686,10 +2723,12 @@ img.u-pull-left {
 }
 
 .text-huge-title {
-    --text-huge : 10.8rem;
+    --text-huge : 6.8rem;
     font-size   : var(--text-huge);
     line-height : 1.0740;
     margin-top  : 0;
+    font-family: var(--font-1);
+    font-weight: 200;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2870,7 +2909,7 @@ img.u-pull-left {
     display       : block;
     border        : 1px solid var(--color-1);
     border-radius : 50%;
-    opacity       : .1;
+    opacity       : 2;
     transform     : translate(-50%, -50%);
     left          : 50%;
     top           : 50%;
@@ -2947,7 +2986,7 @@ img.u-pull-left {
 .mobile-home-link a,
 .main-nav a {
     display             : block;
-    font-size           : 10px;
+    font-size           : 12px;
     font-weight         : 400;
     line-height         : var(--header-height);
     text-transform      : uppercase;
@@ -2975,6 +3014,7 @@ img.u-pull-left {
 
 .main-nav {
     padding : 0;
+    float: left;
 }
 
 .main-nav a {
@@ -2992,15 +3032,22 @@ img.u-pull-left {
     margin           : 0;
     padding          : 0;
     background-color : var(--color-body);
-    border-width     : 1px;
-    border-color     : var(--color-border);
-    border-style     : none solid solid solid;
+    /* border-right : 1px solid var(--color-border); */
 }
 
 .main-nav li {
     flex         : 1 1 0%;
     padding-left : 0;
-    border-right : 1px solid var(--color-border);
+    /*
+    border-width     : 1px;
+    border-style     : none solid solid solid;
+    border-color     : var(--color-border);
+    */
+
+}
+
+.main-nav .empty-li {
+    border-style     : none;
 }
 
 .main-nav li:last-child {
@@ -3226,6 +3273,7 @@ img.u-pull-left {
     position         : absolute;
     top              : 50%;
     left             : calc(98% - 6rem);
+    text             :
 }
 
 .intro-social li {
@@ -3286,9 +3334,6 @@ img.u-pull-left {
         --text-huge-multiplier : .85;
     }
 
-    .intro-social {
-        left : calc(100% - 4rem);
-    }
 
     .intro-scrolldown {
         right : 4rem;
@@ -3345,6 +3390,10 @@ img.u-pull-left {
     .intro-social li {
         padding : 0 .6rem;
     }
+
+    ul.intro-social {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -3356,6 +3405,10 @@ img.u-pull-left {
     .intro-scrolldown {
         right : 2.4rem;
     }
+
+    .intro-social {
+
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -3365,6 +3418,7 @@ img.u-pull-left {
 
     .intro-social {
         left : 1.4rem;
+
     }
 }
 
@@ -3411,7 +3465,7 @@ img.u-pull-left {
     object-fit     : cover;
     margin         : 0;
     vertical-align : bottom;
-    padding-left: 25%;
+    padding-left: 15%;
     max-width: 90%;
     height: auto;
 }
@@ -3732,7 +3786,7 @@ img.u-pull-left {
 }
 
 .folio-list__item-cat {
-    font-size   : var(--text-sm);
+    font-size   : var(--text-size);
     color       : var(--color-text-light);
     line-height : var(--vspace-0_75);
     margin-left : .2rem;
@@ -4130,8 +4184,8 @@ img.u-pull-left {
 
 .s-footer {
     margin-top     : auto;
-    padding-top    : var(--vspace-1);
-    padding-bottom : var(--vspace-3);
+    /* padding-top    : var(--vspace-1);*/
+    padding-bottom : var(--vspace-1);
     color          : var(--color-text-light);
 }
 
@@ -4166,7 +4220,7 @@ img.u-pull-left {
     content : "|";
     display : inline-block;
     padding : 0 .8rem 0 1rem;
-    color   : rgba(255, 255, 255, 0.1);
+    color   : rgba(0, 0, 0, 0.1);
 }
 
 .ss-copyright span:last-child::after {

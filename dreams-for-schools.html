@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Lancy Tan</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+<!-- # preloader
+================================================== -->
+<div id="preloader">
+    <div id="loader">
+    </div>
+</div>
+
+
+<!-- # page wrap
+================================================== -->
+<div class="s-pagewrap">
+
+
+
+    <!-- ## site header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-mobile">
+            <span class="mobile-home-link"><a href="index.html">Lancy Tan.</a></span>
+            <a class="mobile-menu-toggle" href="/"><span>Menu</span></a>
+        </div>
+
+        <div class="row wide main-nav-wrap">
+            <nav class="column lg-12 main-nav">
+                <ul>
+                    <li><a href="index.html" class="home-link">Lancy Tan. </a></li>
+                    <ul>
+
+                        <li><a href="index.html#work" >Work</a></li>
+                        <li><a href="LancyTan_Resume.pdf">Resume</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- ## main content
+    ==================================================- -->
+    <main class="s-content">
+
+
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row intro-content narrow">
+
+                <div class="column">
+
+                    <h1 class="project-h">
+                        Dreams For Schools
+                    </h1>
+
+                    <img src="images/DFS/DFS Cover.png" alt="Dreams For Schools Cover Image">
+                    <p class="project-p">
+                        <strong> Time: </strong> January 2022 - June 2022 <br>
+                        <strong> Role: </strong> UX Developer  <br>
+                        <strong> Tools Used: </strong> Figma, React, GitHub, Slack, Google Cloud, Heroku
+                    </p>
+
+                    <h2 class="project-h"> Project Context </h2>
+
+                    <h3 class="project-h3"> About The Nonprofit</h3>
+
+                    <p class="project-p"> Dreams For Schools (DFS) is a nonprofit organization that partners with K-12 schools to host after school programs that teach students about STEAM subjects (science, technology, engineering, arts, and math).  </p>
+
+                    <h3 class="project-h3"> About My Role </h3>
+
+                    <p class="project-p"> Over the course of this 6 month senior capstone project, I worked in a team of 5 members as a UX developer. I led the design processes by conducting user research, creating wireframes and prototypes, and collaborating with stakeholders. I also developed front-end features for the application. </p>
+                    <h3 class="project-h3"> About The Problem </h3>
+
+                    <p class="project-p"> With the transition to remote learning during COVID-19, DFS has expanded to schools across different states. Currently, their programs director uses Excel spreadsheets to schedule their hired instructors, which does not scale with the growth of their organization.
+                        <br> <br> <strong>To streamline the process of assigning instructors to classes, we developed an Instructor Assignment Sorter, saving DFS 30+ hours each recruitment season.  </strong> </p>
+
+                    <h2 class="project-h">User Research</h2>
+
+                    <p class="project-p">Because this is intended for use as an internal system, the main user group is the DFS admin team. In order to gain a deeper understanding of their current approach to assigning instructors, I interviewed the programs director to identify pain points. With the data gathered, I created a persona and user journey map to guide the process of design and implementation. </p>
+
+
+
+                    <img src="images/DFS/DFS Persona.png" alt="Persona of Dreams For Schools' programs director, core needs being a desire to easily assign instructors in a foolproof manner ">
+                    <img src="images/DFS/DFS User Journey.png" alt="User Journey of Dreams For Schools' programs director as she assigns instructors to teach classes. ">
+                    <h2 class="project-h">Building On A Partially Developed Application</h2>
+
+
+                    <p class="project-p">Working on this project was a unique experience for me and my team. Instead of starting this project from scratch, DFS already had a partially developed Instructor Assignment Sorter. <b> The existing system was worked on by various groups in the past, but it was not yet usable by the nonprofit. </b> Building upon the existing application meant that we had to work with technical constraints, such as the current software architecture, including the structure of the database, the frameworks, and visual styles. </p>
+                    <img src="images/DFS/DFS Existing Constraints.png" alt="Existing application: a partially completed instructor assignment sorter as a starting point for this project">
+
+
+                    <h2 class="project-h">Working in Agile </h2>
+                    <img src="images/DFS/DFS Consolidated List Of Improvements.png" alt="Consolidating requirements for the application into prioritized list for a sprint backlog">
+                    <p class="project-p">Following agile methodology, we worked in two week sprints. To make this process as smooth as possible, we first organized our consolidated requirements document into a projected schedule.. Through discussion with the team and our stakeholders, we were able to consolidate this long list and assign priorities to the sorter page of the application.
+
+                        <br> <br> Communication played a major role in agile development. To set clear communication expectations between us and the nonprofit, we agreed upon weekly meetings as well as asynchronous communication via Slack for updates and pressing clarification questions. This allowed us to be transparent about our progress, communicate issues and needs, and facilitate teamwork.
+                    </p>
+
+
+
+                    <h2 class="project-h">A Manual Way To Assign Instructors</h2>
+                    <p class="project-p"> One major limitation of the existing application was the sorting algorithm used. <br> <br>
+
+                        <b> Problem #1: </b> The existing application used the Gale-Shapley, or “stable marriage” algorithm to assign instructors based on preference and availability. However, in practice, the DFS admin team took many more factors into consideration, including the instructor’s distance from the school, experience level, languages spoken, and others.
+                        <br> <br>
+                        <b> Problem #2: </b> The programs director also wanted to be able to choose between many possible assignment scenarios. This was also an issue, because the stable marriage algorithm only provides one “optimal” scenario.
+                        <br> <br>
+                        <b> Problem #3: </b> The algorithm assigns each instructor to at most one class, which does not offer the option for instructors to teach multiple classes.
+                        <br> <br>
+
+                        Our team decided to look for a solution to all three problems that fit within our time and resource constraints. <b> We decided on a solution to manually assign instructors. </b> This would not replace the existing algorithm, but offer a way for instructors to make modifications as necessary post-assignment.
+                    </p>
+
+                    <h2 class="project-h">Styling Constraints</h2>
+                    <p class="project-p"> To come up with a design solution, I took into consideration the existing layout, including the typography and the color styles. The theme of the instructor assignment sorter was playful and bright, which complemented the Dreams For Schools brand and their purpose. Colors played a major role in the application and were also used to organize their educational programs. </p>
+                    <img src="images/DFS/DFS Style Guide.png" alt="Style guide for DFS project - including color choices, typography and buttons">
+
+                    <h2 class="project-h"> Designing The Information Architecture</h2>
+                    <p class="project-p"> My goal with the initial design was to find a way to organize all the information about each instructor into a single container. The factors taken into consideration during instructor assignment was a long list, including the instructors’ ethnicity, school year, languages they speak, whether they own a car, etc. I started by grouping relevant pieces of data together, eventually forming different “categories” of information.  </p>
+                    <img src="images/DFS/DFS Info Architecture.png" alt="How I categorized the various attributes about instructors into different categories to improve information architecture">
+
+                    <h2 class="project-h"> Initial Design</h2>
+
+                    <p class="project-p"> Being one of the developers of this application, I took a different approach to the design process. Instead of starting with a design made from scratch, I thought about how I could make use of the existing components within the application as much as possible. This allowed me to create designs that maintained consistency and helped users know what to expect each step of the way. </p>
+                    <img src="images/DFS/DFS Reusing Components.png" alt="The initial design of the manual instructor assignment feature included reused components from other pages of the application.">
+
+                    <h2 class="project-h"> Final Design</h2>
+                    <p class="project-p">
+                        Through deliberation with my team members and the DFS admins, we were able to reach a consensus on a design concept. I then refined the prototype for implementation.
+
+                        Coding the features I designed was a challenging but rewarding learning experience for me, as it was my first time using React and familiarizing myself with a legacy codebase. I worked on the “sorter” page, where I was able to bring my manual instructor assignment design to life.
+                    </p>
+
+                    <div style="text-align:center;">
+                        <img class= "project-img-smaller"src="images/DFS/DFS Stakeholder Feedback.png" alt="Before and after of the manual assignment popup">
+                    </div>
+                    <img src="images/DFS/DFS Final Product.png" alt="Final wireframes for 'Manual instructor assignment' feature">
+
+                    <h2 class="project-h">What I've Learned...</h2>
+                    <h3 class="project-h3">Adapt To The Constraints</h3>
+                    <p class="project-p">
+                        When my team took on this project, it was already partially developed. This meant that my design process didn’t start with a blank slate like some of my previous experiences. Instead, I had to design features on an already existing system that needed many improvements. This taught me to be comfortable working with existing limitations. </p>
+
+
+                    <h3 class="project-h3"> Communicate often!</h3>
+                    <p class="project-p"> My team and I remained highly communicative throughout the process - we met with each other multiple times a week, reflected on our momentum through sprint reports, and met with our nonprofit stakeholders weekly. This process taught me to be understanding of my team members’ roles and how to effectively convey my ideas to stakeholders without design backgrounds.
+
+                    </p>
+
+                </div>
+
+
+            </div> <!-- end intro content -->
+
+
+        </section> <!-- end s-intro -->
+
+
+
+
+
+        <!-- ## footer
+        ================================================== -->
+    </main>
+    <hr>
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column ss-copyright">
+                <span>By Lancy Tan</span>
+                <span> <a href="https://www.linkedin.com/in/lancy-tan/"><i class="fa fa-linkedin"></i></a></span>
+                <span> <a href="https://lancy-tan.medium.com/"><i class="fa fa-medium"></i></a></span>
+                <span>© Copyright Luther 2021</span>
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                </a>
+            </div>
+        </div>
+
+    </footer> <!-- end s-footer -->
+</div> <!-- end -s-pagewrap -->
+
+
+<!-- Java Script
+================================================== -->
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

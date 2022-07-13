@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+
+  <!--- basic page needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Lancy Tan</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- mobile specific metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- favicons
+  ================================================== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favi32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favi16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+<!-- # preloader
+================================================== -->
+<div id="preloader">
+  <div id="loader">
+  </div>
+</div>
+
+
+<!-- # page wrap
+================================================== -->
+<div class="s-pagewrap">
+
+
+
+  <!-- ## site header
+  ================================================== -->
+  <header class="s-header">
+
+    <div class="header-mobile">
+      <span class="mobile-home-link"><a href="index.html">Lancy Tan.</a></span>
+      <a class="mobile-menu-toggle" href="/"><span>Menu</span></a>
+    </div>
+
+    <div class="row wide main-nav-wrap">
+      <nav class="column lg-12 main-nav">
+        <ul>
+          <li><a href="index.html" class="home-link">Lancy Tan. </a></li>
+          <ul>
+
+            <li><a href="index.html#work" >Work</a></li>
+            <li><a href="LancyTan_Resume.pdf">Resume</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </div>
+
+  </header> <!-- end s-header -->
+
+
+  <!-- ## main content
+  ==================================================- -->
+  <main class="s-content">
+
+
+    <section id="intro" class="s-intro target-section">
+
+      <div class="row intro-content narrow">
+
+        <div class="column">
+
+          <h1 class="project-h">
+            OC Habitats
+          </h1>
+
+          <img src="images/OCH/OCH Cover.png" alt="OC Habitats Cover Image">
+          <p class="project-p">
+            <strong> Time: </strong> October 2021 - June 2022 <br>
+          <strong> Role: </strong> UX Designer  <br>
+              <strong> Tools Used: </strong> Figma, Slack
+          </p>
+
+          <h2 class="project-h"> Project Context </h2>
+
+          <h3 class="project-h3"> About The Nonprofit</h3>
+
+          <p class="project-p"> OC Habitats (OCH) is a nonprofit local to the Orange County area. Their mission is to protect, conserve, and rehabilitate nearby habitats and the species living within them. One way they do this is via “habitat monitoring”, where they assign volunteers to survey shorebirds on the Orange County coast. </p>
+
+          <h3 class="project-h3"> About My Role </h3>
+
+          <p class="project-p"> I worked as a UX designer with 6 other designers and 18 developers. This project was done as a part of Commit The Change at UCI, a student organization that partners with nonprofits to create high quality software. As a part of the OCH design team, I conducted user research, created designs from sketching to high fidelity prototypes, led user testing, and communicated with stakeholders. </p>
+
+          <h3 class="project-h3"> About The Problem </h3>
+
+          <p class="project-p"> OCH currently uses paper forms, or “monitor logs”, for their volunteers to record data about the local habitat. With 40+ logs per month, it is difficult to take note of data trends. The COVID-19 lockdown has also made it difficult to keep track of all the logs.
+            <br> <br> <strong>To solve this problem,  we created a platform for OCH admins and volunteers to digitize their pen and paper monitor log system. </strong> </p>
+
+          <div style="text-align:center;">
+          <img class= "project-img-smaller" src="images/OCH/OCH Monitor Log Before.png" alt="How OC Habitats monitor logs looked like before, a paper scan">
+          </div>
+          <h2 class="project-h">User Research</h2>
+
+          <p class="project-p">Before starting on designs, our team took the time to learn more about the users. The users for this system includes the admins, who will manage volunteers and form data, and volunteers, who will fill in monitor logs for the habitats they monitor. We gathered information about each group and what set of features each group needs. </p>
+
+          <p class="project-p project-p-list"> What we know about the volunteers…  </p>
+
+          <ul class = "project-p">
+            <li>OCH averages 10-20 volunteers monthly</li>
+            <li>On average, each volunteer does 2 reports per month</li>
+            <li>Their volunteers are in the 30+ age group, many of whom are seniors</li>
+            <li>Some will fill out the form on their mobile or tablet devices</li>
+            <li>Some will use the paper form at the site, and transfer it to the platform later </li>
+            <li>As they survey the habitat, they will be using other devices as well (e.g. GPS device) </li>
+          </ul>
+
+          <p class="project-p"> I was assigned to work on the admin-facing feature of editing the monitor log template. Every monitor log follows the same template, but on occasion, the form fields may be edited to reflect changes to the types of data being recorded. To perform additional research to design this feature, I conducted a competitive analysis on existing form builders on the market. </p>
+
+          <img src="images/OCH/OCH Competitive Analysis.png" alt="Competitive analysis of various form builders, including Paperform, Surveymonkey, Google Forms, Typeform, WuFoo, HubSpot Form Builder and Qualtrics">
+
+          <h2 class="project-h">Design Process</h2>
+          <h3 class="project-h3"> Low Fidelity </h3>
+          <p class="project-p"> Starting the designs on the edit monitor log feature proved to be difficult. In an attempt to give the OCH admins as much flexibility as possible, I created a design that would allow admins to create new sections and add questions of any type. However, there was a huge variety in question types, including dropdowns, dates, times, and special units like temperature, wind, tide, etc. This design started to become overwhelming, and felt like many traditional form editors. </p>
+          <div style="text-align:center;">
+            <img class= "project-img-smaller"src="images/OCH/OCH Low-fi.png" alt="Low fidelity wireframes of 'Edit Monitor Log' feature">
+          </div>
+          <h3 class="project-h3"> Mid Fidelity </h3>
+          <p class="project-p"> To learn more about the feature I was designing, I continued to ask the OCH admins about the scope and the context in which it would be used. This included questions such as how often they planned to edit the template, and what kind of changes they foresaw. With more clarity from our nonprofit stakeholders, I was able to gain a better understanding overall.
+
+            <br> <br> This allowed me to focus on the necessary features and make them as easy to use as possible. I decided on a fixed sidebar design so that each question could be selected and reviewed with ease. Drag and drop was also utilized to reorder questions and drag newly created questions to the desired spot. Other pages in the platform utilized drag and drop to move elements around, so this was maintained on the edit monitor log feature for consistency.
+          </p>
+
+          <img src="images/OCH/OCH Mid Fi.png" alt="Mid fidelity wireframes of 'Edit Monitor Log' feature">
+
+          <h3 class="project-h3"> Style Guide </h3>
+
+          <img src="images/OCH/OCH Style Guide.png" alt="Style guide for OCH project - including color choices, typography and buttons">
+
+          <h3 class="project-h3"> Stakeholder Feedback</h3>
+          <p class="project-p"> With the completion of mid fidelity wireframes, my team and I conducted remote user testing with both internal (OCH admins and volunteers) and external (third party participants) user groups. I led 2 usability tests on Zoom using both desktop and mobile prototypes. </p>
+
+          <p class="project-p project-p-list"> Feedback For “Edit Monitor Log” Page  </p>
+
+          <ul class = "project-p">
+            <li>Drag and drop felt unintuitive</li>
+            <li>Previewing a newly created question in the sidebar is not needed </li>
+          </ul>
+
+          <p class="project-p project-p-list">Popups were chosen for the new design as… </p>
+
+          <ol class = "project-p">
+            <li>this feature was necessary but would be used infrequently</li>
+            <li>some of the sidebar features were already anticipated to be changed due to user feedback </li>
+            <li>it would allow the developers to reuse components, and thus save time</li>
+          </ol>
+
+          <h2 class="project-h"> Final Design</h2>
+          <img src="images/OCH/OCH Final.png" alt="Final wireframes for 'Edit monitor log' feature">
+
+          <h2 class="project-h">What I've Learned...</h2>
+          <h3 class="project-h3">We are not our users </h3>
+          <p class="project-p"> Conducting usability tests with users of different backgrounds reinforced to me the importance of the user’s opinion. While my design team and I were excited to include features such as drag and drop, the users preferred an alternate method for this application. The feedback gathered from users during this process were crucial in the finalization of our designs.
+
+          <h3 class="project-h3"> Time constraints sometimes mean compromise  </h3>
+          <p class="project-p"> This project quickly became “overscoped”, with more features than we originally anticipated. To solve this, we had to simplify many of the features on the application, including the one I oversaw. As a result, the wireframes for this project looked drastically different at every stage. This experience taught me the importance of the needs of all stakeholders, not just the user, but also the project managers and developers.
+          </p>
+
+        </div>
+
+
+      </div> <!-- end intro content -->
+
+
+    </section> <!-- end s-intro -->
+
+
+
+
+
+      <!-- ## footer
+      ================================================== -->
+    </main>
+    <hr>
+    <footer class="s-footer">
+      <div class="row">
+        <div class="column ss-copyright">
+          <span>By Lancy Tan</span>
+          <span> <a href="https://www.linkedin.com/in/lancy-tan/"><i class="fa fa-linkedin"></i></a></span>
+          <span> <a href="https://lancy-tan.medium.com/"><i class="fa fa-medium"></i></a></span>
+          <span>© Copyright Luther 2021</span>
+          <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+        </div>
+
+        <div class="ss-go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </footer> <!-- end s-footer -->
+  </div> <!-- end -s-pagewrap -->
+
+
+<!-- Java Script
+================================================== -->
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
